@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+  <body>
+
+    <h3>Messages</h3>
+    <ul class="messages">
+    <% for(var i=0 ; i<messages.length; i++) {%>
+      <li class="message">
+        <span id="xWin"><%= messages[i].xWin %></span>
+        <span id="yWin"><%= messages[i].yWin %></span>
+      </li>
+    <% } %>
+    </ul>
+
+
+    <form class="messages" action="score" method="post">
+      <input type="text" name="name" value="">
+      <input type="text" name="xWin" value="">
+      <input type="text" name="yWin" value="">
+      <input type="submit" name="" value="">
+
+    </form>
+
+
+
+
+
+    <section class="topRow">
+      <section id="top1" class="grid top1"></section>
+      <section id="top2" class="grid top2"></section>
+      <section id="top3" class="grid top3"></section>
+    </section>
+    <section class="midRow">
+      <section id="mid1" class="grid mid1"></section>
+      <section id="mid2" class="grid mid2"></section>
+      <section id="mid3" class="grid mid3"></section>
+    </section>
+    <section class="botRow">
+      <section id="bot1" class="grid bot1"></section>
+      <section id="bot2" class="grid bot2"></section>
+      <section id="bot3" class="grid bot3"></section>
+    </section>
+    <button class="button" type="button" name="button">RESET</button>
+    <script type="text/javascript" src="main.js">
+
+    </script>
+  </body>
+</html>
